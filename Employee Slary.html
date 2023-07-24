@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Salary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="forleftbody">
+        <div class="row" >
+            <div class="left-container col-sm-2 col-md-2 col-lg-2"   id="leftText">
+                    <div class="row shadow-sm p-2 mb-0 bg-body ">
+                        <img class="col-sm-6 col-md-6 col-lg-4 mb-1 pt-1 " src="images/branco-removebg-preview.png" alt=""height="48" width="48">
+                        <h6 class="ol-sm-6 col-md-6 col-lg-8 fs-6 pt-3" style="color: rgb(42,37,125);"> <b>Brancosoft HRMS</b> </h6>
+                    </div>
+                        
+                    <div class="row  p-1 pe-5 pt-2 text-black-50 " >   
+                        <i class="fas fa-regular fa-gauge  col-sm-6 col-md-6 col-lg-3 pt-3 ps-3"></i>
+                        <p class="col-sm-6 col-md-6 col-lg-9 fs-6 pt-2 " style="padding-right: 14px;"><a href="/Final/Index.html" class="text-decoration-none text-black-50">Dashboard</a> </p>
+                    </div>
+                    
+                    <div  class="row  my-2 pe-4 " style="height: 30px;">
+                        <i class="fa-solid fa-user-group col-sm-6 col-md-6 col-lg-2 text-black-50 pt-2 ps-3"></i>
+                        <p class="col-sm-6 col-md-6 col-lg-2 fs-6  text-black-50 pt-1 ps-3"> <a href="./Employee.html" class="text-decoration-none text-black-50" style="margin-right: 30px;">Employee</a> </p>
+                        <i class="fa-solid fa-angle-right col-sm-6 col-md-6 col-lg-8 fs-6 text-black-50 pt-2" style="padding-left: 130px;"></i>
+                    </div>
+                    
+                    <div class="row my-4 pe-4" style="height: 30px; margin-right: 80px;" >
+                        <i class="fa-solid fa-calendar-days col-sm-6 col-md-6 col-lg-4 text-black-50 pt-2 ps-3"></i>
+                        <p class="col-sm-6 col-md-6 col-lg-8 fs-6   text-black-50 pt-1">Attendence</p>
+                    </div>
+                    
+                    <div class="row my-4 pe-4" style="height: 30px; margin-right: 80px;">
+                        <i class="fa-regular fa-calendar col-sm-6 col-md-6 col-lg-4 text-black-50 pt-2 ps-3"></i>
+                        <p class="col-sm-6 col-md-6 col-lg-8 fs-6  text-black-50 pt-1">Leaves</p>
+                    </div>
+                    
+                    <div  class="row  my-2 pe-4 " style="height: 30px;">
+                        <i class="fa fa-briefcase col-sm-6 col-md-6 col-lg-2 text-black-50 pt-2 ps-3"></i>
+                        <p class="col-sm-6 col-md-6 col-lg-2 fs-6  text-black-50 pt-1 ps-3">Master</p>
+                        <i class="fa-solid fa-angle-right col-sm-6 col-md-6 col-lg-8 fs-6 text-black-50 pt-2" style="padding-left: 130px;"></i>
+                    </div>
+
+                    <div class="row my-4 pe-5 pt-3" style="height: 70px; background-color:  rgb(233,233,233);">
+                        <i class="fa-solid fa-credit-card col-sm-6 col-md-6 col-lg-3 text-primary pt-2 ps-3"></i>
+                        <p class="col-sm-6 col-md-6 col-lg-9 fs-6 pt-1 text-pri" >Salaries</p>
+                    </div>
+                    
+                    <div class="row my-3   pe-4" style="height: 30px; margin-right: 80px;">
+                        <i class="fa-solid fa-user-secret col-sm-6 col-md-6 col-lg-4 text-black-50 pt-2 ps-3"></i>
+                        <p class="col-sm-6 col-md-6 col-lg-8 fs-6  text-black-50 pt-1">Vendors</p>
+                    </div>
+                    
+                    <div class="row my-4  pe-4" style="height: 30px; margin-right: 80px;">
+                        <i class=" fa-sharp fa-solid fa-gear  col-sm-6 col-md-6 col-lg-4 text-black-50 pt-2 ps-3"></i>
+                        <p class="col-sm-6 col-md-6 col-lg-8 fs-6  text-black-50 pt-1">Setting</p>
+                    </div>
+            </div>
+                    
+                <!--side navbar hide ke lie -->
+            <div class=" col-sm-2 col-md-2 col-lg-2 ps-3 d-none " style="border-right: #bcb8b1 1px solid; "  id="leftText">
+                <div class="" id="leftNabvar" >
+                    <div class="row pt-1 ">
+                        <img class="col-sm-6 col-md-6 col-lg-1  ps-4" src="images/branco-removebg-preview.png" alt=""height="48" width="48">
+                    </div>
+    
+                    <div class="row ps-2 pt-2 pe-5" style=" background-color:  rgb(233,233,233);">   
+                        <p class="col-sm-6 col-md-6 col-lg-1 fs-5  text-primary" >Dashboard</p>
+                    </div>
+                    
+                    <div class="row my-2 ps-4 pt-2 pe-5" style="height: 30px; margin-right: 80px;">
+                        <i class="fa-solid fa-user-group col-sm-6 col-md-6 col-lg-1 text-black-50 pt-2"></i>
+                    </div>
+                    
+                    <div class="row my-4 ps-4 pt-2 pe-5" style="height: 30px; margin-right: 80px;" >
+                        <i class="fa-solid fa-calendar-days col-sm-6 col-md-6 col-lg-1 text-black-50 pt-2"></i>
+                    </div>
+                    
+                    <div class="row my-4 ps-4 pt-2 pe-5" style="height: 30px; margin-right: 80px;">
+                        <i class="fa-regular fa-calendar col-sm-6 col-md-6 col-lg-1 text-black-50 pt-2"></i>
+                    </div>
+                    
+                    <div class="row my-4 ps-4 pt-2 pe-5" style="height: 30px; margin-right: 80px;">
+                        <i class="fa fa-briefcase col-sm-6 col-md-6 col-lg-1 text-black-50 pt-2"></i>
+                    </div>
+    
+                    <div class="row my-4 ps-4 pt-2 pe-5" style="height: 30px;margin-right: 80px;">
+                        <i class="fa-solid fa-credit-card col-sm-6 col-md-6 col-lg-1 text-black-50 pt-2"></i>
+                    </div>
+    
+                    <div class="row my-4 ps-4 pt-2 pe-5" style="height: 30px; margin-right: 80px;">
+                        <i class="fa-solid fa-user-secret col-sm-6 col-md-6 col-lg-1 text-black-50 pt-2"></i>
+                    </div>
+                    
+                    <div class="row my-4  ps-4 pt-2 pe-5" style="height: 30px; margin-right: 80px;">
+                        <i class=" fa-sharp fa-solid fa-gear  col-sm-6 col-md-6 col-lg-1 text-black-50 pt-2"></i>
+                    </div>
+                </div>
+            </div>
+        
+
+           <div class="right-container col-sm-10 col-md-10 col-lg-10" style=" height: 100%;background-color: rgb(241,241,245);">
+            <div class="row">
+                <div class="row shadow-sm p-1 mb-0 bg-body pt-2" style="margin-left: 12px;">
+                    <div class="col-sm-2 col-md-4 col-lg-2 p-2 ps-5" >
+                        <i class="fa-solid fa-arrow-left row text-black-50 pt-2" id="leftArrow"></i>
+                        <!-- <i class="fa-solid fa-magnifying-glass ps-4 text-black-50 ps-5"></i> -->
+                         
+                        <div class="input-icons text-black-50 ms-4 " style="position:absolute; top: 10px;" id="myInput" ">
+                            <i class="fa-solid fa-magnifying-glass float-end position-absolute pt-2" style="padding-left: 190px;"></i>
+                            <input type="text" class="form-control   text-black-50 " placeholder="search...">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-8 col-lg-6 pt-3 offset-4 row text-black-50" >
+                        <p class="col-sm-1 col-md-6 col-lg-6 " style="padding-left: 270px;">Welcome/Admin</p>
+                        <span  class="col-sm-1 col-md-4 col-lg-4  mt-0  rounded-circle" style="padding-left:110px; ">
+                            <img class="pb-1" id="AdminId" src="images/admin.jpg "></img>
+                        </span>
+                        <i class= "col-sm-1 col-md-2 col-lg-2  fa-sharp fa-solid fa-bell fs-5 pt-1" style="padding-left: 0px;" ></i>
+                    </div>
+                </div>
+               
+        
+                <div id="menuId" style="z-index:9999; " class="d-none" >
+                    <div class="menu position-absolute  bg-white  my-1" style="margin-left: 64%; width: 150px; height: 180px;cursor: pointer;">
+                        <div class="row text-black-50 p-2 ps-3 ps-4">
+                            <div class="col-12">
+                                <i class="fa-solid fa-user "></i>
+                                <p class="ps-4 position-absolute" style=" top:10px">Profile</p>
+                            </div>
+                            
+                            <div class="col-12 my-3">
+                                <i class="fa-solid fa-credit-card  "></i>
+                                <p class="ps-4 position-absolute" style="top:48px">Billing</p>                                
+                            </div>
+                            
+                            <div class="col-12 my-2">
+                                <i class=" fa-sharp fa-solid fa-gear"></i>
+                                <p class="ps-4 position-absolute" style="top:93px">Setting</p>
+                            </div>
+                            <hr>
+                            <div class="col-12 ">
+                                <i class="fa-solid fa-power-off "></i>
+                                <p class="ps-4 position-absolute" style="top:142px">logout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <!-- start right -->
+                <div class="row" style=" height: 100vh;"  >
+                    <div   style="margin-top:10px;">
+                        <div class="row mt-5 ms-5" id="empId">
+                            <div class="col-sm-2 col-md-2 col-lg-2 ">
+                                <h5 class=" ps-3"><b>Employee Salary</b> </h5>
+                            </div>
+                             <div class="col-sm-4 col-md-4 col-lg-4 offset-sm-4 offset-md-4 offset-lg-4" style="padding-left: 170px;">
+                                <div class="input-icons text-black-50 ">
+                                    <i class="fa-solid fa-magnifying-glass float-end position-absolute pt-2" style="padding-left: 190px;"></i>
+                                    <input type="text" class="form-control ps-2  text-black-50 border border" placeholder="search...">
+                                </div>
+                             </div>
+                             <div class=" col-sm-2 col-md-2 col-lg-2 text-black-50 ps-2">
+                                <i class="fa-solid fa-plus float-end position-relative   ps-3 text-black-50" style="padding-top: 10px;"></i>
+                                <button class=" btn  btn-primary  text-center " style="padding-left: 35px;" onclick="location.href='/Final/Add Salary.html'" >Add Salary</button>
+                            </div>
+                       </div>
+                      <table class=" table table-responsive table table-hover text-black-50 bg-white ms-5 mt-5 table-sortable"   style="width: 96%; "   >
+                        <thead  >
+                        <tr  >
+                            <th class="pt-5">Employee</th>
+                            <th> Employee ID</th>
+                            <th>Email</th>
+                            <th>Join Date</th>
+                            <th>Role</th>
+                            <th>Salary</th>
+                            <th>Payslip</th>
+                        </tr>
+                        </thead>
+    
+                    <tbody>
+                        <tr style="background-color: rgb(251,253,253);" class="ps-5">
+                            <td class="text-primary">
+                                <span><img src="images/alex-mar.jpg" alt="" srcset="" class="rounded-circle" ></span>
+                                Jenny
+                            </td>
+                            <td>BS-008</td>
+                            <td>alex@gmail.com</td>
+                            <td>21 Dec 2019</td>
+                            <td>
+                                <button class="btn btn-warning text-white">developer</button>
+                            </td>
+                            <td>$38400</td>
+                            <td>
+                                
+                                <button  type="button" class="btn btn-dark text-white"><i class="fa-solid fa-arrow-up-from-bracket pe-2 "></i>Generate Slip</button>
+                            </td>
+                        </tr>
+    
+                        <tr >
+                            <td class="text-primary">
+                                <span><img src="images/john2.jpg" alt="" srcset="" class="rounded-circle"></span>
+                                John Doe
+                            </td>
+                            <td>BS-006</td>
+                            <td>alex@gmail.com</td>
+                            <td>5 March 2018</td>
+                            <td>
+                                <button class="btn btn-warning ">Developer</button>
+                            </td>
+                            <td>$38400</td>
+                            <td>
+                                
+                                <button  type="button" class="btn btn-dark text-white"> <i class="fa-solid fa-arrow-up-from-bracket pe-2 " ></i>Generate Slip</button>
+                            </td>
+                        </tr>
+    
+                        <tr style="background-color: rgb(251,253,253);">
+                            <td class="text-primary">
+                                <span><img src="images/amit.jpg" alt="" srcset="" class="rounded-circle"></span>
+    
+                                Amit Kumar
+                            </td>
+                            <td>BS-001</td>
+                            <td>amit@gmail.com</td>
+                            <td>11 Jan 2017</td>
+                            <td>
+                                <button class="btn btn-success">Supporter</button>
+                            </td>
+                            <td>$38400</td>
+                            <td>
+                                
+                                <button  type="button" class="btn btn-dark text-white"><i class="fa-solid fa-arrow-up-from-bracket pe-2 "></i> Generate Slip</button>
+                            </td>
+                        </tr>
+    
+                        <tr >
+                            <td class="text-primary">
+                                <span><img src="images/jeffery.jpg" alt="" srcset="" class="rounded-circle"></span>
+    
+                                Jeffery Lalor
+                            </td>
+                            <td>BS-002</td>
+                            <td>Jeffery@gmail.com</td>
+                            <td>10 Jan 2018</td>
+                            <td>
+                                <button class="btn btn-primary">member</button>
+                            </td>
+                            <td>$38400</td>
+                            <td>
+                               
+                                <button  type="button" class="btn btn-dark text-white"> <i class="fa-solid fa-arrow-up-from-bracket pe-2 "></i> Generate Slip</button>
+                            </td>
+                        </tr>
+    
+                        <tr style="background-color: rgb(251,253,253);">
+                            <td class="text-primary">
+                                <span><img src="images/john1.jpg" alt="" srcset="" class="rounded-circle"></span>
+                                Nick
+                            </td>
+                            <td>BS-003</td>
+                            <td>john@gmail.com</td>
+                            <td>10 Feb 2018</td>
+                            <td>
+                                <button class="btn btn-primary">Member</button>
+                            </td>
+                            <td>$38400</td>
+                            <td>
+                               
+                                <button  type="button"  class="btn btn-dark text-white"> <i class="fa-solid fa-arrow-up-from-bracket pe-2 "></i> Generate Slip</button>
+                            </td>
+                        </tr>
+    
+                        <tr >
+                            <td class="text-primary">
+                                <span><img src="images/alex-mar1.jpg" alt="" srcset="" class="rounded-circle"></span>
+                                Alex Mar
+                            </td>
+                            <td>BS-005</td>
+                            <td>John@gmail.com</td>
+                            <td>01 March 2018</td>
+                            <td>
+                                <button class="btn btn-danger">Admin</button>
+                            </td>
+                            <td>$38400</td>
+                            <td>
+                               
+                                <button type="button" class="btn btn-dark text-white"> <i class="fa-solid fa-arrow-up-from-bracket pe-2 "></i> Generate Slip</button>
+                            </td>
+                        </tr>
+    
+                        <tr style="background-color: rgb(251,253,253);">
+                            <td class="text-primary">
+                                <span><img src="images/john3.jpg" alt="" srcset="" class="rounded-circle" ></span>
+    
+                                John Doe
+                            </td>
+                            <td>BS-007</td>
+                            <td>John@gmail.com</td>
+                            <td>22 March 2018</td>
+                            <td>
+                                <button class="btn text-white text-bg-warning">developer</button>
+                            </td>
+                            <td>$38400</td>
+                            <td class="text-black-50">
+                                <button class="btn btn-dark text-white"><i class="fa-solid fa-arrow-up-from-bracket pe-2 "></i>Generate Slip</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                      </table>
+                   </div>
+                </div>
+            </div>
+           </div>
+        </div>  
+    </div>         
+
+<script>
+    $(document).ready(function(){
+    $("#AdminId").click(function(){
+    console.log("i am click")
+    $("#menuId").toggleClass("d-none");
+  });
+});
+
+$(document).ready(function(){
+    $("#leftArrow").click(function(){
+    $("#leftNabvar").show();
+    $("#leftText").hide();
+  });
+});
+</script>
+
+
+   
+<script src="/Final/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
